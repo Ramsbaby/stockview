@@ -1,0 +1,101 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:site-url: /build/asciidoc/html5/
+
+= StockView Service RestAPI Server
+
+== 주식종목뷰어
+
+[[StockView-API]]
+
+=== 1. 가장 거래량이 많은 종목 조회 API
+
+curl)
+include::{snippets}/getTopVolumeStocks/curl-request.adoc[]
+
+==== response parameters
+
+include::{snippets}/getTopVolumeStocks/request-parameters.adoc[]
+
+==== response body
+
+include::{snippets}/getTopVolumeStocks/response-body.adoc[]
+
+==== response fields
+
+include::{snippets}/getTopVolumeStocks/response-fields.adoc[]
+
+=== 2. 가장 많이 본 주식종목 조회 API
+
+curl)
+include::{snippets}/getMostViewedStocks/curl-request.adoc[]
+
+==== response parameters
+
+include::{snippets}/getMostViewedStocks/request-parameters.adoc[]
+
+==== response body
+
+include::{snippets}/getMostViewedStocks/response-body.adoc[]
+
+==== response fields
+
+include::{snippets}/getMostViewedStocks/response-fields.adoc[]
+
+=== 3. 가장 많이 오른 주식종목 조회 API
+
+curl)
+include::{snippets}/getTopIncreasedStocks/curl-request.adoc[]
+
+==== response parameters
+
+include::{snippets}/getTopIncreasedStocks/request-parameters.adoc[]
+
+==== response body
+
+include::{snippets}/getTopIncreasedStocks/response-body.adoc[]
+
+==== response fields
+
+include::{snippets}/getTopIncreasedStocks/response-fields.adoc[]
+
+=== 4. 가장 많이 내린 주식종목 조회 API
+
+curl)
+include::{snippets}/getTopDecreasedStocks/curl-request.adoc[]
+
+==== response parameters
+
+include::{snippets}/getTopDecreasedStocks/request-parameters.adoc[]
+
+==== response body
+
+include::{snippets}/getTopDecreasedStocks/response-body.adoc[]
+
+==== response fields
+
+include::{snippets}/getTopDecreasedStocks/response-fields.adoc[]
+
+=== 5. 순위 랜덤 변동 API
+
+curl)
+include::{snippets}/changeRank/curl-request.adoc[]
+
+==== http request
+
+include::{snippets}/changeRank/http-request.adoc[]
+
+==== response body
+
+include::{snippets}/changeRank/response-body.adoc[]
+
+==== response fields
+
+include::{snippets}/changeRank/response-fields.adoc[]

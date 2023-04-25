@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:~/ramsbaby/stockview/h2-console;NON_KEYWORDS=USER;
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+    defer-datasource-initialization: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  sql:
+    init:
+      platform: h2
+
+logging:
+  level:
+    root: INFO
+
+server:
+  port: 8080
+
